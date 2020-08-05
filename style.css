@@ -1,0 +1,128 @@
+a {
+  text-decoration: none;
+  color: #8a8d91;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* body {
+  font-family: Helvetica, Arial, sans-serif;
+}
+* body .MainArea {
+  width: 100%;
+  height: 550px;
+  background: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+* body .MainArea .loginInfo {
+  width: 440px;
+  height: 450px;
+}
+* body .MainArea .loginInfo .logo {
+  height: 20%;
+  text-align: center;
+  margin-top: -10px;
+}
+* body .MainArea .loginInfo .logo img {
+  height: 95px;
+}
+* body .MainArea .loginInfo .loginBox {
+  height: 80%;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 5px #ddd;
+  text-align: center;
+}
+* body .MainArea .loginInfo .loginBox h2 {
+  font-size: 1.7rem;
+  margin: 0.8rem 0 1.4rem 0;
+  color: #1a1a1a;
+}
+* body .MainArea .loginInfo .loginBox input {
+  width: 100%;
+  padding: 15px;
+  margin: 0.3rem 0;
+  font-size: 1.1rem;
+  border-radius: 0.4rem;
+  border: 1px solid #cfcfcf;
+}
+* body .MainArea .loginInfo .loginBox input:focus {
+  outline: none;
+}
+* body .MainArea .loginInfo .loginBox input[type=submit] {
+  background: #1877f2;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+* body .MainArea .loginInfo .loginBox .extraLink {
+  margin-top: 0.8rem;
+}
+* body .MainArea .loginInfo .loginBox .extraLink a {
+  color: #1877f2;
+  margin: 0 0.4rem;
+}
+* body .MainArea .loginInfo .loginBox .extraLink a:hover {
+  text-decoration: underline;
+}
+* body .footer {
+  margin-top: 6.5rem;
+}
+* body .footer .container {
+  width: 1000px;
+  margin: auto;
+}
+* body .footer .container .footerTop {
+  display: flex;
+  align-items: center;
+  line-height: 2.5rem;
+}
+* body .footer .container .footerTop p {
+  font-size: 0.9rem;
+  color: #707378;
+  display: inline-block;
+  margin-right: 1rem;
+}
+* body .footer .container .footerTop a {
+  margin-right: 0.5rem;
+  font-size: 0.8rem;
+}
+* body .footer .container .footerTop button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 1.5rem;
+  font-size: 1.4rem;
+  color: #5e5e5e;
+  background: #ddd;
+  border: 1px solid #a0a0a0;
+}
+* body .footer .container .footerTop button:hover {
+  background: #d7d7d7;
+}
+* body .footer .container .footerBottom {
+  border-top: 1px solid #ddd;
+  padding-top: 0.5rem;
+}
+* body .footer .container .footerBottom a {
+  padding: 0.4rem 1rem 0.4rem 0rem;
+  display: inline-block;
+  font-size: 0.75rem;
+}
+* body .footer .container .footerCredit {
+  font-size: 0.75rem;
+  color: #707378;
+  margin-top: 1.5rem;
+}
+
+/*# sourceMappingURL=style.css.map */

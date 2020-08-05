@@ -1,0 +1,140 @@
+$primary: #1877f2;
+$bgColor: #f0f2f5;
+$color: #8a8d91;
+
+
+@mixin container(){
+    width: 1000px;
+    margin: auto;
+    @content;
+}
+a{
+    text-decoration: none;
+    color: $color;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    body{
+        font-family: Helvetica, Arial, sans-serif;
+        .MainArea{
+            width: 100%;
+            height: 550px;
+            background: $bgColor;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .loginInfo{
+                width: 440px;
+                height: 450px;
+                .logo{
+                    height: 20%;
+                    text-align: center;
+                    margin-top: -10px;
+                    img{
+                        height: 95px;
+                    }
+                }
+                .loginBox{
+                    height: 80%;
+                    padding: 20px;
+                    background: white;
+                    border-radius: 10px;
+                    box-shadow: 0 0 10px 5px #ddd;
+                    text-align: center;
+                    h2{
+                        font-size: 1.7rem;
+                        margin: .8rem 0 1.4rem 0;
+                        color: lighten(#000000, 10%)
+                    }
+                    input{
+                        width: 100%;
+                        padding: 15px;
+                        margin: .3rem 0;
+                        font-size: 1.1rem;
+                        border-radius: .4rem;
+                        border: 1px solid rgb(207, 207, 207);
+                        &:focus{
+                            outline: none;
+                        }
+                        &[type='submit']{
+                            background:$primary;
+                            font-size: 1.5rem;
+                            font-weight: bold;
+                            color: white;
+                        }
+                    }
+                    .extraLink{
+                        margin-top: .8rem;
+                        a{
+                            color: $primary;
+                            margin: 0 .4rem;
+                            &:hover{
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+        .footer{
+            margin-top: 6.5rem;
+            .container{
+                @include container(){
+                }
+                .footerTop{
+                    display: flex;
+                    align-items: center;
+                    line-height: 2.5rem;
+
+                    p{
+                        font-size: .90rem;
+                        color: darken($color, 10%);
+                        display: inline-block;
+                        margin-right: 1rem;
+                    }
+                    a{
+                       margin-right: .5rem;
+                       font-size: .8rem;
+                    }
+                    button{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 2rem;
+                        height: 1.5rem;
+                        font-size: 1.4rem;
+                        color: rgb(94, 94, 94);
+                        background: #ddd;
+                        border: 1px solid rgb(160, 160, 160);
+                        &:hover{
+                            background: darken(rgb(240, 240, 240),10%);
+                        }
+                    }
+                }
+                .footerBottom{
+                    border-top: 1px solid #ddd;
+                    padding-top: .5rem;
+                    a{
+                        padding: .4rem 1rem .4rem 0rem;
+                        display:inline-block;
+                        font-size: .75rem;
+                     }
+                }
+
+                .footerCredit{
+                    font-size: .75rem;
+                    color: darken($color,10%);
+                    margin-top: 1.5rem;
+                }
+            }
+        }
+
+    }
+}

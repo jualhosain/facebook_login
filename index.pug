@@ -1,0 +1,33 @@
+doctype
+html
+    head
+        title Facebook - log in or sign up
+        link(rel="stylesheet", href="style.css")
+    body
+        .MainArea
+            .loginInfo
+                .logo
+                    img(src="img/facebook.svg", alt="")
+                .loginBox
+                    h2 Log Into Facebook
+                    input(type="text" placeholder='Email or Phone Number')
+                    input(type="password" placeholder='Password')
+                    input(type='submit' value='Log In')
+                    .extraLink
+                        a(href="#") Forgot account?
+                        a(href="#") Sign up for Facebook
+        .footer
+            .container
+                .footerTop
+                    p English (US)
+                    - var arr= ["Deutsch","Türkçe","Polski","Italiano","Français (France)","Română","Русский","العربية","Español","Português (Brasil)"];
+                     for a in arr
+                        a(href='#')= a
+                        
+                    button + 
+                .footerBottom
+                    - var fo = ["Sign Up","Log In","Messenger","Facebook Lite","Watch","People","Pages","Page Categories","Places","Games","Locations","Marketplace","Facebook Pay","Groups","Oculus","Portal","Instagram","Local","Fundraisers","Services","About","Create Ad","Create Page","Developers","Careers","Privacy","Cookies","Ad Choices","Impressum/Terms/NetzDG","Help","Settings","Activity Log"]; 
+                        for aa in fo
+                            a(href="#")= aa
+                .footerCredit 
+                    p Facebook @ 2020
